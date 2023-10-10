@@ -14,40 +14,34 @@ public abstract class Role1 {
     protected IRunBehavior runBehavior;
     protected IAttackBehavior attackBehavior;
 
-    public Role1 setDefendBehavior(IDefendBehavior defendBehavior)
-    {
+    public Role1 setDefendBehavior(IDefendBehavior defendBehavior) {
         this.defendBehavior = defendBehavior;
         return this;
     }
-    public Role1 setRunBehavior(IRunBehavior runBehavior)
-    {
+
+    public Role1 setRunBehavior(IRunBehavior runBehavior) {
         this.runBehavior = runBehavior;
         return this;
     }
 
-    public Role1 setAttackBehavior(IAttackBehavior attackBehavior)
-    {
+    public Role1 setAttackBehavior(IAttackBehavior attackBehavior) {
         this.attackBehavior = attackBehavior;
         return this;
     }
 
-    protected void display()
-    {
+    protected void display() {
         displayBehavior.display();
     }
 
-    protected void run()
-    {
+    protected void run() {
         runBehavior.run();
     }
 
-    protected void attack()
-    {
+    protected void attack() {
         attackBehavior.attack();
     }
 
-    protected void defend()
-    {
+    protected void defend() {
         defendBehavior.defend();
     }
 
